@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+!pip install sklearn
 from sklearn.svm import SVR
 from sklearn.metrics import r2_score
 from datetime import date
