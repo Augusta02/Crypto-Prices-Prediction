@@ -13,7 +13,7 @@ import pickle
 
 loaded_model = pickle.load(open('Cardano_Price_prediction.pkl', 'rb'))
 
-st.set_page_config(page_title="Cardano Price Prediction App", layout='wide')
+st.header('Cardano Price Prediction')
 
 Today = date.today().strftime('%Y-%m-%d')
 
@@ -50,8 +50,8 @@ hide_streamlit_style = """
 
 
 
-date = st.number_input(date.today().strftime('%Y-%m-%d'))
-Amount('USD') = st.number_input("Price (in dollars)")
+Today = st.number_input(date.today().strftime('%Y-%m-%d'))
+Amount = st.number_input("Price (in dollars)")
 
 
 if st.button("Predict"):
