@@ -18,8 +18,8 @@ st.set_page_config(page_title="Cardano Price Prediction App", layout='wide')
 Today = date.today().strftime('%Y-%m-%d')
 
 def model(df):
-    X = ['Price(in dollars']
-    y = y[-future_days]
+    X = ['Price(in dollars)']
+    y = [str(future_days) + '_Day_Price_Forecast']
 
         
     return df
@@ -55,7 +55,7 @@ Price('in dollars') = st.number_input("Price (in dollars)")
 
 
 if st.button("Predict"):
-    X= {:df.shape[0] - future_days}
+    X= {'Price(in dollars)'}
     res = model(df)
     result = loaded_model.predict(res)
     st.markdown(result)
