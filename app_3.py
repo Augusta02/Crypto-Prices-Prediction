@@ -50,12 +50,12 @@ hide_streamlit_style = """
 
 
 
-country = st.text_input("country")
-ed = st.text_input("education")
-yoe = st.number_input("YOE")
+date = st.number_input(date.today().strftime('%Y-%m-%d'))
+Price('in dollars') = st.number_input("Price (in dollars)")
+
 
 if st.button("Predict"):
-    X= {'Country': country, 'EdLevel': ed, 'YearsCodePro': int(yoe)}
-    res = model_encoder(X)
+    X= {:df.shape[0] - future_days}
+    res = model(df)
     result = loaded_model.predict(res)
     st.markdown(result)
