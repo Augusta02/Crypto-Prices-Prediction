@@ -18,8 +18,8 @@ st.header('Cardano Price Prediction')
 Today = date.today().strftime('%Y-%m-%d')
 
 def model(df):
-    X = ['Price(in dollars)']
-    y = [str(future_days) + '_Day_Price_Forecast']
+    X = df['Price(in dollars)']
+    y = df[str(future_days) + '_Day_Price_Forecast']
 
         
     return df
@@ -31,7 +31,7 @@ import streamlit.components.v1 as components
 
 html_temp = """
 <div style = "background.color:teal; padding:10px">
-<h2 style = "color:white; text_align:center;"> ML test </h2>
+
 <p style = "color:white; text_align:center;"> </p>
 </div>
 """
