@@ -51,7 +51,7 @@ hide_streamlit_style = """
 
 
 date = st.number_input(date.today().strftime('%Y-%m-%d'))
-Price('in dollars') = st.number_input("Price (in dollars)")
+Amount('USD') = st.number_input("Price (in dollars)")
 
 
 if st.button("Predict"):
