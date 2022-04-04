@@ -25,7 +25,7 @@ Today = date.today().strftime('%Y-%m-%d')
 #     return df
 
 def model(X):
-    df['Date'] = date.today().strftime('%Y-%m-%d')
+    # df['Date'] = date.today().strftime('%Y-%m-%d')
     df['Price (in dollars)'] = np.array(df[['Price(in dollars)']])
 
     return df
@@ -60,7 +60,7 @@ Amount = st.number_input("Price (in dollars)")
 
 
 if st.button("Predict"):
-    X= {'Price(in dollars)'}
+    X= {'Price(in dollars)': Amount}
     res = model(X)
     result = loaded_model.predict(res)
     st.markdown(result)
