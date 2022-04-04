@@ -17,14 +17,17 @@ st.header('Cardano Price Prediction')
 
 Today = date.today().strftime('%Y-%m-%d')
 
-def model(df):
-    X = df['Price(in dollars)']
-    y = df[str(future_days) + '_Day_Price_Forecast']
+# def model(df):
+#     X = df['Price(in dollars)']
+#     y = df[str(future_days) + '_Day_Price_Forecast']
 
         
-    return df
+#     return df
 
-
+def model(df):
+    df['Date'] = date.today().strftime('%Y-%m-%d')
+    df['Price (in dollars)'] = np.array(df[['Price(in dollars)']])
+    
 
 
 import streamlit.components.v1 as components
