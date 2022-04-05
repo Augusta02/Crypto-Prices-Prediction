@@ -24,11 +24,15 @@ Today = date.today().strftime('%Y-%m-%d')
         
 #     return df
 
-def model(X):
-    # df['Date'] = date.today().strftime('%Y-%m-%d')
-    df['Price (in dollars)'] = np.array(df[['Price(in dollars)']])
+# def model(X):
+#     # df['Date'] = date.today().strftime('%Y-%m-%d')
+#     df['Price (in dollars)'] = np.array(df[['Price(in dollars)']])
 
-    return df
+    # return df
+
+
+def model2(X):
+    return np.array(X) 
     
 
 
@@ -47,7 +51,7 @@ st.markdown(html_temp, unsafe_allow_html = True)
 #st.cache()
 hide_streamlit_style = """
             <style>
-            #MainMenu {visibility: hidden;}
+            MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
             </style>
             """
