@@ -32,14 +32,14 @@ Today = date.today().strftime('%Y-%m-%d')
 
 
 def model2(X):
-    return np.array(X) 
+    return np.array(X).reshape(-1,1)
     
 
 
 import streamlit.components.v1 as components
 
 html_temp = """
-<div style = "background.color:teal; padding:10px">
+<div style = "background.color:purple; padding:10px">
 
 <p style = "color:white; text_align:center;"> </p>
 </div>
@@ -51,7 +51,7 @@ st.markdown(html_temp, unsafe_allow_html = True)
 #st.cache()
 hide_streamlit_style = """
             <style>
-            MainMenu {visibility: hidden;}
+           
             footer {visibility: hidden;}
             </style>
             """
