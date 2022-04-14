@@ -64,7 +64,7 @@ Amount = st.number_input("Price (in dollars)")
 
 
 if st.button("Predict"):
-    X= {'Price(in dollars)': Amount}
+    X= Amount
     res = model2(X)
     result = loaded_model.predict(res)
     st.markdown(result)
