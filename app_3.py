@@ -59,7 +59,7 @@ hide_streamlit_style = """
 
 
 
-Today = st.number_input(date.today().strftime('%Y-%m-%d'))
+Today = date.today().strftime('%Y-%m-%d')
 Amount = st.number_input("Price (in dollars)")
 
 
