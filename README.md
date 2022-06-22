@@ -1,6 +1,6 @@
 # Crypto-Prices-Prediction
 ### Facebook Prophet Monthly Trends Plot
-<img width="652" alt="Screen Shot 2022-06-16 at 12 46 14 PM" src="https://user-images.githubusercontent.com/61966991/175004233-49094042-8018-4027-8245-77eb92f92a18.png">
+<img width="646" alt="Screen Shot 2022-06-22 at 11 16 06 AM" src="https://user-images.githubusercontent.com/61966991/175005385-ebbc40a1-6cbd-4111-8cc7-76fe4491ebaf.png">
 
 
 ### Daily Trends
